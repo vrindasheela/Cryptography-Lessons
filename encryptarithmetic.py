@@ -2,7 +2,7 @@
 ##---------Create a List for Numbers
 ##---------Create another list for Letters
 ##---------Find the ASCII value of A and Z using ord() function
-##---------zip(a, b) aggregates the two iterbles a and b as a single one .
+##---------zip(a, b) aggregates the two iterables a and b as a single one .
 ##---------dict() constructes a dictionary
 ##---------map(). Map takes a function and an iterable as arguments. 
 ##---------map applies the function passed to it to every item of the iterable and returns a list.
@@ -36,6 +36,8 @@ for c in Input_Word:
 #print(list_word_number)
 for num in range (0,len(list_word_number)):
     list_word_number[num]=list_word_number[num]+Input_Number
+    if list_word_number[num]>25:
+        list_word_number[num]=list_word_number[num]-25
 #print(list_word_number)
 for number in list_word_number:
     for key in Jargon_Dictionary.keys():
